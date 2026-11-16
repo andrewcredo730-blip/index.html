@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Store | Ranks</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #1f6feb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .rank-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .rank-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: var(--accent-hover);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+        }
+
+        footer {
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>✨ Fuel the Realm: Server Store ✨</h1>
+        <p>Support the server and unlock exclusive in-game perks!</p>
+    </header>
+
+    <div class="container">
+        <!-- VIP -->
+        <div class="card">
+            <div class="rank-title">[VIP]</div>
+            <div class="rank-desc">Get basic supporter perks, a custom Discord role, and an entry-level in-game rank.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+
+        <!-- Supporter+ -->
+        <div class="card">
+            <div class="rank-title">[Supporter+]</div>
+            <div class="rank-desc">Bronze tier support with additional utility perks and private chat access.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+
+        <!-- Supporter++ -->
+        <div class="card">
+            <div class="rank-title">[Supporter++]</div>
+            <div class="rank-desc">Silver tier support with extra homes, claims, and exclusive cosmetic features.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+
+        <!-- Supporter+++ -->
+        <div class="card">
+            <div class="rank-title">[Supporter+++]</div>
+            <div class="rank-desc">Gold tier support with maximum perks, custom chat prefix, and Hall of Fame recognition.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+
+        <!-- Victor+ -->
+        <div class="card">
+            <div class="rank-title">[Victor+]</div>
+            <div class="rank-desc">Elite tier with particle effects, priority queue access, and exclusive Discord color.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+
+        <!-- Victor++ -->
+        <div class="card">
+            <div class="rank-title">[Victor++]</div>
+            <div class="rank-desc">Legendary tier featuring ultimate custom commands and a direct say in community events.</div>
+            <a href="INSERT_STORE_LINK_HERE" class="btn" target="_blank">Purchase</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Donations are 100% optional and go straight back into server upgrades and hosting costs. Thank you!</p>
+    </footer>
+
+</body>
+</html>
